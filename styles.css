@@ -1,0 +1,95 @@
+/* Responsive */
+@media only screen and (min-width: 751px) and (max-width: 1000px) {
+  .container {
+    transform: scale(0.9);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+  .container {
+    transform: scale(0.7);
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 599px) {
+  .container {
+    transform: scale(0.5);
+  }
+}
+@media only screen and (min-width: 1px) and (max-width: 349px) {
+  .container {
+    transform: scale(0.3);
+  }
+}
+
+/* General Rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  user-select: none;
+  -webkit-user-drag: none;
+  text-align: center;
+  color: #262626;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #3a1c71;
+  background: #3a1c71;
+  background: -webkit-linear-gradient(to bottom, #ffaf7b, #d76d77, #3a1c71);
+  background: linear-gradient(to bottom, #ffaf7b, #d76d77, #5425aa90);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fab1a0;
+  box-shadow: 0px 0px 8px 10px #00000053;
+  border-radius: 10px;
+  min-width: 500px;
+  min-height: 500px;
+}
+.container h2 {
+  margin: 1em;
+}
+#result {
+  display: flex;
+  align-items: center;
+  margin: 1em;
+}
+.user,
+.computer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user span,
+.computer span {
+  margin: 0.8em;
+}
+.title {
+  line-height: 3em;
+}
+.container button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.container button img {
+  filter: brightness(75%) grayscale(100%);
+  transition: filter 200ms ease;
+}
+.container button img:hover {
+  filter: none;
+  transform: scale(1.025);
+}
+.container button:active {
+  filter: brightness(55%);
+}
+footer {
+  margin: 1.5em 0 0.5em 0;
+}
