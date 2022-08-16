@@ -50,7 +50,7 @@ function play(userOption) {
                 resultText.innerHTML = "¡Has Ganado, enhorabuena! 🥳";
                 break;
             case LOSE:
-                resultText.innerHTML = "Has perdido, inténtanlo de nuevo 😢";
+                resultText.innerHTML = "Has perdido, inténtalo de nuevo 😢";
                 break;
         }
         rockBtn.disabled = false;
